@@ -1,0 +1,2 @@
+# seminar-react
+React application
