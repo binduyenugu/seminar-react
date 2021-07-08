@@ -10,6 +10,7 @@ function Register(props) {
     const id = props.match.id;
 
     useEffect(() => {
+        console.log("hiii");
        const id = props.match.params.id;
        if(id === "_add"){
             setOperation("Add")
@@ -20,7 +21,7 @@ function Register(props) {
             })
             setOperation("Edit")
     }
-    }, [])
+    },[])
     
     
     const add = (e) => {
