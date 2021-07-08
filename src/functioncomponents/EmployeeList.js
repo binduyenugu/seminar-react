@@ -10,11 +10,9 @@ function EmployeeList() {
     const history = useHistory();
     const [employeeList, setEmployeeList] = useState([]);
     useEffect(() => {
-        console.log("hii");
         axios.get("http://localhost:3001/api/register/")
             .then((response) => {
-                setEmployeeList(response.data)
-                return response.data;
+                setEmployeeList(response.data);
             })
             .catch((error) => {
                 console.log("Problem in the page....");
